@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="nav.css">
+
+   <link rel="stylesheet" href="hero.css">
+
+   <link rel="stylesheet" href="about.css">
+
+    <link rel="stylesheet" href="skill.css">
+
+    <link rel="stylesheet" href="project.css">
+
+    <link rel="stylesheet" href="contact.css">
+  <title>My Portfolio</title>
+  
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#" class="nav-logo">&lt;Jawwad&gt;</a>
+
+    <ul class="nav-links">
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    
+    <button class="nav-btn">Hire Me</button>
+
+    <!-- Mobile hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  
+
+
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+
+    <div class="hero-container">
+
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <div class="hero-tag">Frontend Developer</div>
+
+        <h1>Hi, I'm <span>Jawwad Zaidi</span><br>I build for the web.</h1>
+
+        <p>
+          Crafting fast, beautiful, and accessible web experiences —
+          one pixel at a time. Open to freelance & full-time work.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">
+            View My Work ↓
+          </a>
+          <a href="https://drive.google.com/file/d/1YwMNmKThcTl9YjxWJnawZ2lU1VHLfGIo/view?usp=drive_link" download class="btn-outline">
+            ⬇ Download Resume
+          </a>
+        </div>
+
+        <!-- Social Links -->
+      <div class="hero-socials">
+
+          <!-- GitHub -->
+          <a href="https://github.com/jawwadzaidi" target="_blank" class="social-link" title="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/jawwad-zaidi-0b9270320/" target="_blank" class="social-link" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+
+          <!-- Email -->
+         
+
+        </div>
+      </div>
+
+      <!-- Right: Avatar -->
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-emoji">👨‍💻</div>
+        </div>
+        <div class="hero-badge">Available for Work ✦</div>
+      </div>
+
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <span>↓</span>
+    </div>
+
+  </section>
+
+
+  
+  <section class="about" id="about">
+
+    <p class="section-label">// about me</p>
+    <h2 class="section-title">Who I Am</h2>
+
+    <div class="about-grid">
+
+      <!-- LEFT -->
+      <div class="about-left">
+
+        <!-- Photo -->
+        <div class="about-photo">
+          <span>👨‍💻</span>
+        </div>
+
+        <!-- Quick Info Card -->
+        <div class="about-info-card">
+          <div class="info-row">
+            <span class="info-label">Name</span>
+            <span class="info-value">Jawwad Hussain Zaidi</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Location</span>
+            <span class="info-value">Delhi, India</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Experience</span>
+            <span class="info-value">9 Month</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Status</span>
+            <span class="info-value">✦ Available</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Email</span>
+            <span class="info-value">Jawwadh810@gmail.com</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="about-right">
+
+        <p>
+          Hello! I am <span>Jawwad Zaidi</span> — a passionate <span>Frontend Developer</span> from Delhi. I love building beautiful, fast, and user-friendly websites.
+        </p>
+
+        <p>
+          I specialize in <span>React.js, JavaScript, and CSS</span>. In every project, I focus on both design and performance — because a great website should not only look good but also feel smooth and responsive to use.
+        </p>
+
+        <!-- Stats -->
+        <div class="about-stats">
+          <div class="stat-box">
+            <span class="stat-num">9</span>
+            <span class="stat-label">Month Exp</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+
+        <!-- What I do -->
+        <div class="about-services">
+          <div class="service-item">
+            <span class="service-icon">🎨</span>
+            Responsive UI / UX Design
+          </div>
+          <div class="service-item">
+            <span class="service-icon">⚛️</span>
+            React.js Web Applications
+          </div>
+          <div class="service-item">
+            <span class="service-icon">⚡</span>
+            Performance Optimization
+          </div>
+        </div>
+
+        <!-- Resume Button -->
+        <a href="https://drive.google.com/file/d/1YwMNmKThcTl9YjxWJnawZ2lU1VHLfGIo/view" download class="about-resume-btn">
+          ⬇ Download Resume
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+
+   <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+
+    <p class="section-label">// skills</p>
+    <h2 class="section-title">What I Work With</h2>
+
+    <!-- Category Tabs -->
+    <div class="skills-tabs">
+      <button class="tab-btn active" onclick="filterSkills('all')">All</button>
+      <button class="tab-btn" onclick="filterSkills('frontend')">Frontend</button>
+      <button class="tab-btn" onclick="filterSkills('framework')">Frameworks</button>
+      <button class="tab-btn" onclick="filterSkills('other')">Other</button>
+    </div>
+
+    <!-- Skills Grid -->
+    <div class="skills-grid">
+
+      <!-- Frontend -->
+      <div class="skill-card" data-cat="frontend">
+        <span class="skill-icon">🧱</span>
+        <div class="skill-name">HTML5</div>
+        <div class="skill-level">Expert</div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+      </div>
+
+      <div class="skill-card" data-cat="frontend">
+        <span class="skill-icon">🎨</span>
+        <div class="skill-name">CSS3 / SCSS</div>
+        <div class="skill-level">Advanced</div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+      </div>
+
+      <div class="skill-card" data-cat="frontend">
+        <span class="skill-icon">🟨</span>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level">Advanced</div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+      </div>
+
+      
+
+      <!-- Frameworks -->
+      <div class="skill-card" data-cat="framework">
+        <span class="skill-icon">⚛️</span>
+        <div class="skill-name">React.js</div>
+        <div class="skill-level">Advanced</div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+      </div>
+
+   
+
+      <div class="skill-card" data-cat="framework">
+        <span class="skill-icon">💨</span>
+        <div class="skill-name">Tailwind CSS</div>
+        <div class="skill-level">Advanced</div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+      </div>
+
+      <!-- Other -->
+      <div class="skill-card" data-cat="other">
+        <span class="skill-icon">🐙</span>
+        <div class="skill-name">Git / GitHub</div>
+        <div class="skill-level">Proficient</div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+      </div>
+
+    
+
+      
+
+    </div>
+
+    <!-- Tools & Technologies -->
+    <p class="tools-title">// tools & technologies</p>
+    <div class="tools-row">
+      <span class="tool-pill">VS Code</span>
+      <span class="tool-pill">npm / yarn</span>
+      <span class="tool-pill">Webpack</span>
+      <span class="tool-pill">Vite</span>
+      <span class="tool-pill">Postman</span>
+      <span class="tool-pill">Chrome DevTools</span>
+      <span class="tool-pill">Vercel</span>
+      <span class="tool-pill">Netlify</span>
+    </div>
+
+  </section>
+
+    <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+
+    <p class="section-label">// projects</p>
+    <h2 class="section-title">My Work</h2>
+
+    <!-- Filter Tabs -->
+    <div class="project-tabs">
+      <button class="proj-tab active" onclick="filterProjects('all', this)">All</button>
+      <button class="proj-tab" onclick="filterProjects('react', this)">React</button>
+      <button class="proj-tab" onclick="filterProjects('js', this)">JavaScript</button>
+     
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card" data-cat="react">
+        <div class="project-preview">
+         ⏱
+          <span class="featured-badge">Featured</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">01 — React App</div>
+          <h3>Time Counter</h3>
+          <p>A simple timer web app that tracks time in hours, minutes, and seconds with an easy-to-use interface and real-time updates.</p>
+          <div class="project-tech">
+            <span class="tech-pill">React</span>
+            
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://timecounter07.netlify.app/" class="proj-link live">🔗 Live Demo</a>
+          <a href="https://github.com/jawwadzaidi/Timecounter-using-React" class="proj-link code">🐙 Code</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-cat="react">
+        <div class="project-preview">📊</div>
+        <div class="project-body">
+          <div class="project-tag">02 — Dashboard</div>
+          <h3>Analytics Dashboard</h3>
+          <p>Real-time data visualization dashboard with interactive charts, dark mode, and live API data integration.</p>
+          <div class="project-tech">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Chart.js</span>
+            <span class="tech-pill">REST API</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" class="proj-link live">🔗 Live Demo</a>
+          <a href="#" class="proj-link code">🐙 Code</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-cat="next">
+        <div class="project-preview">
+          🎨
+          <span class="featured-badge">Featured</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">03 — Landing Page</div>
+          <h3>Design Agency Site</h3>
+          <p>Animated landing page for a creative agency with scroll-triggered effects, smooth transitions and modern layout.</p>
+          <div class="project-tech">
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">GSAP</span>
+            <span class="tech-pill">SCSS</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" class="proj-link live">🔗 Live Demo</a>
+          <a href="#" class="proj-link code">🐙 Code</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card" data-cat="js">
+        <div class="project-preview">📝</div>
+        <div class="project-body">
+          <div class="project-tag">04 — Tool</div>
+          <h3>Markdown Editor</h3>
+          <p>Live markdown editor with real-time preview, syntax highlighting, word count and export to PDF feature.</p>
+          <div class="project-tech">
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">CSS Grid</span>
+            <span class="tech-pill">LocalStorage</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" class="proj-link live">🔗 Live Demo</a>
+          <a href="#" class="proj-link code">🐙 Code</a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card" data-cat="js">
+        <div class="project-preview">🌤️</div>
+        <div class="project-body">
+          <div class="project-tag">05 — API App</div>
+          <h3>Weather App</h3>
+          <p>Real-time weather app using OpenWeather API. Shows temperature, humidity, wind speed with beautiful UI.</p>
+          <div class="project-tech">
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">OpenWeather API</span>
+            <span class="tech-pill">CSS</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" class="proj-link live">🔗 Live Demo</a>
+          <a href="#" class="proj-link code">🐙 Code</a>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card" data-cat="next">
+        <div class="project-preview">📰</div>
+        <div class="project-body">
+          <div class="project-tag">06 — Blog</div>
+          <h3>Developer Blog</h3>
+          <p>Full-stack blog platform with markdown support, categories, search functionality and SEO optimization.</p>
+          <div class="project-tech">
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">MDX</span>
+            <span class="tech-pill">Tailwind</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" class="proj-link live">🔗 Live Demo</a>
+          <a href="#" class="proj-link code">🐙 Code</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View All on GitHub -->
+    <div class="view-all-wrap">
+      <a href="https://github.com/jawwadzaidi" target="_blank" class="view-all-btn">
+        🐙 View All Projects on GitHub →
+      </a>
+    </div>
+
+  </section>
+
+
+
+
+
+ 
+   <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+
+    <p class="section-label">// contact</p>
+    <h2 class="section-title">Let's Connect</h2>
+
+    <!-- Availability Badge -->
+    <div class="avail-badge">
+      <div class="avail-dot"></div>
+      Available for Work
+    </div>
+
+    <!-- Intro -->
+    <p class="contact-intro">
+      Do you have a project? Or just want to <span>have a conversation?</span>  
+I am available for both <span>freelance and full-time</span> work.  
+Just send a message — I usually <span>reply within 24 hours</span>!
+    </p>
+
+    <!-- Big Email CTA -->
+    <a href="mailto:you@email.com" class="contact-email-cta">
+      <div class="cta-icon">📧</div>
+      <div class="cta-text">
+        <span class="cta-label">Email me at</span>
+        <span class="cta-value">Jawwadh810@gmail.com</span>
+      </div>
+    </a>
+
+    <!-- Info Cards -->
+    <div class="contact-cards">
+
+      <a href="tel:+919999999999" class="contact-card">
+        <div class="card-icon">📱</div>
+        <div class="card-info">
+          <span class="card-label">Phone</span>
+          <span class="card-value">+91 7289989183</span>
+        </div>
+      </a>
+
+      <div class="contact-card">
+        <div class="card-icon">📍</div>
+        <div class="card-info">
+          <span class="card-label">Location</span>
+          <span class="card-value">Delhi, India</span>
+        </div>
+      </div>
+
+      
+
+      <div class="contact-card">
+        <div class="card-icon">⚡</div>
+        <div class="card-info">
+          <span class="card-label">Response Time</span>
+          <span class="card-value">Within 24 Hours</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Social Buttons -->
+    <p class="contact-socials-title">// find me on</p>
+    <div class="contact-socials">
+      <a href="https://github.com/jawwadzaidi" target="_blank" class="social-btn">🐙 GitHub</a>
+      <a href="https://www.linkedin.com/in/jawwad-zaidi-0b9270320/" target="_blank" class="social-btn">💼 LinkedIn</a>
+     
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    Made with ❤️ by <span>Jawwad</span> &nbsp;·&nbsp;
+    &copy; 2026 &nbsp;·&nbsp;
+    <span>Frontend Developer</span>
+  </footer>
+
+  <script>
+    function submitForm() {
+      const name    = document.getElementById('fname').value.trim();
+      const email   = document.getElementById('femail').value.trim();
+      const subject = document.getElementById('fsubject').value;
+      const message = document.getElementById('fmessage').value.trim();
+
+      // Basic validation
+      if (!name || !email || !subject || !message) {
+        alert('Please fill in all fields!');
+        return;
+      }
+
+      if (!email.includes('@')) {
+        alert('Valid email address daalo!');
+        return;
+      }
+
+      // Hide form, show success
+      document.getElementById('contactForm').style.display = 'none';
+      const success = document.getElementById('formSuccess');
+      success.style.display = 'flex';
+    }
+  </script>
+  <script>
+    function filterProjects(cat, el) {
+
+      // Active tab
+      document.querySelectorAll('.proj-tab').forEach(t => {
+        t.classList.remove('active');
+      });
+      el.classList.add('active');
+
+      // Filter cards
+      document.querySelectorAll('.project-card').forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+
+  <script>
+    // Tab filter function
+    function filterSkills(cat) {
+
+      // Active tab update
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+
+      // Cards filter
+      document.querySelectorAll('.skill-card').forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+  
+
+</body>
+</html>

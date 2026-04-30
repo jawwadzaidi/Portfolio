@@ -1,0 +1,133 @@
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0a0f;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      background: rgba(10, 10, 15, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 106, 255, 0.18);
+    }
+
+    /* Logo */
+    .nav-logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #a78bfa;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    /* Nav Links */
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #7a7890;
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #a78bfa;
+    }
+
+    /* Active link */
+    .nav-links a.active {
+      color: #a78bfa;
+      border-bottom: 2px solid #7c6aff;
+      padding-bottom: 2px;
+    }
+
+    /* Hire Me Button */
+    .nav-btn {
+      background: #7c6aff;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+
+    .nav-btn:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+
+    /* ===== MOBILE HAMBURGER ===== */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 2px;
+      background: #a78bfa;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 1.2rem;
+      background: #111118;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid rgba(124, 106, 255, 0.18);
+    }
+
+    .mobile-menu a {
+      color: #7a7890;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .mobile-menu a:hover {
+      color: #a78bfa;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-btn {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+      nav {
+        padding: 1rem 1.5rem;
+      }
+    }
+
+    
