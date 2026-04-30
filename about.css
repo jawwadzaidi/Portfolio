@@ -5,6 +5,8 @@
     padding: 6rem 3rem;
     max-width: 1000px;
     margin: 0 auto;
+
+    overflow-x: hidden;
   }
 
   .section-label {
@@ -224,4 +226,17 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  @media (max-width: 768px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-left,
+  .about-right {
+    text-align: center;
+  }
+}
 

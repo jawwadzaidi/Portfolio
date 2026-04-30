@@ -3,6 +3,8 @@
     padding: 6rem 3rem;
     max-width: 1000px;
     margin: 0 auto;
+
+    overflow-x: hidden;
   }
 
   /* Category Tabs */
@@ -140,3 +142,10 @@
       padding: 4rem 1.5rem;
     }
   }
+
+  @media (max-width: 768px) {
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

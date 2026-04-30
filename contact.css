@@ -3,6 +3,8 @@
     padding: 6rem 3rem;
     max-width: 1000px;
     margin: 0 auto;
+
+    overflow-x: hidden;
   }
 
   .contact-intro {
@@ -215,3 +217,16 @@
       width: 100%;
     }
   }
+
+  @media (max-width: 768px) {
+
+  .contact-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-email-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+}

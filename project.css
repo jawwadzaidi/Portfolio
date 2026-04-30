@@ -3,6 +3,8 @@
     padding: 6rem 3rem;
     max-width: 1000px;
     margin: 0 auto;
+
+    overflow-x: hidden;
   }
 
   /* Filter Tabs */
@@ -239,3 +241,14 @@
       grid-template-columns: 1fr;
     }
   }
+
+  @media (max-width: 768px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
